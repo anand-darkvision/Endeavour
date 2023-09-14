@@ -1,0 +1,21 @@
+#port address -> server port
+4590 
+#postgres port -> database connect
+3478
+
+#create table function
+
+create table users
+(
+    id bigserial primary key not null,
+    name varchar(200) not null,
+    email varchar(200) not null,
+    password varchar(200) not null,
+    UNIQUE (email)
+)
+
+#main file 
+server.js
+
+#configuration file 
+package.json
